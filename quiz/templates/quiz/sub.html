@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
+                style="
+        height: 697px;">
+                <a href="{% url 'quiz:displaypdfai' %}" class="nav-link px-0">
+                    <span class="d-none d-sm-inline" style="color:white">AI</span></a>
+
+                <a href="{% url 'quiz:displaypdfwt' %}" class="nav-link px-0">
+                    <span class="d-none d-sm-inline" style="color:white">WT</span> </a>
+
+                <a href="{% url 'quiz:displaypdfos' %}" class="nav-link px-0">
+                    <span class="d-none d-sm-inline" style="color:white">OS</span></a>
+
+                <a href="{% url 'quiz:displaypdfdm' %}" class="nav-link px-0">
+                    <span class="d-none d-sm-inline" style="color:white">DM</span></a>
+
+                <a href="{% url 'quiz:displaypdfmccp' %}" class="nav-link px-0">
+                    <span class="d-none d-sm-inline" style="color:white">MCCP</span></a>
+
+                <hr />
+            </div>
+        </div>
+        <div class="col py-3">Content area...</div>
+    </div>
+</div>
+{% endblock %}
